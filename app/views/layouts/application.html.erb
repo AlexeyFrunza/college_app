@@ -2,13 +2,33 @@
 <html>
   <head>
     <title>CollegeApp</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
-
+    <%= favicon_link_tag '/public/favicon.ico' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="full-height">
+      <nav class="nav-block">
+        <div class="nav-wrapper grey darken-3
+        
+        ">
+          <a href="#" class="brand-logo">
+            <%= image_tag("icon-wide.png", alt: "image", size: '80x50', class:"icon" ) %>
+          </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="sass.html" class="nav-link">Sass</a></li>
+              <li><a href="badges.html" class="nav-link">Components</a></li>
+              <li><a href="collapsible.html" class="nav-link">JavaScript</a></li>
+            </ul>
+        </div>
+      </nav>
+      <%= yield %>
+    </div>
   </body>
 </html>

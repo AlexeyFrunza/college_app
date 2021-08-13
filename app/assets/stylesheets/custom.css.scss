@@ -1,0 +1,113 @@
+@import "materialize";
+:root {
+  --primary: #4846b65b;
+  --secondary: #49c6f81f;
+}
+.full-height {
+  height: 100vh;
+}
+.nav-block {
+  height: 10%;
+}
+#nav-mobile {
+  height: 100%;
+}
+#nav-mobile li {
+  height: 100%;
+}
+.nav-link {
+ height: 100%;
+ display: flex;
+ align-items: center;
+}
+.carousel {
+  height: 90%;
+}
+.home {
+  margin-top: 3%;
+  border-radius: 3px;
+}
+.home-page-photo {
+  width: 70%;
+  height: 70%;
+}
+.photo-block {
+  text-align: center;
+}
+.brand-logo {
+  height: 100%;
+  display: flex !important;
+  align-items: center;
+  padding-left: 15px !important;
+}
+.home-left {
+  height: 60vh;
+}
+.center-align {
+  color: white;
+}
+.header {
+  font-family: 'Spectral', serif !important;
+}
+.carousel-b {
+  color: white;
+  cursor: pointer;
+}
+.first-carousel-item {
+  height: 100%;
+  background: linear-gradient(to left, var(--primary),var(--secondary)),
+                              url(../assets/3.jpg) 100% 30% / cover  !important;
+}
+.second-carousel-item {
+  height: 100%;
+  background: linear-gradient(to left, var(--primary),var(--secondary)),
+                              url(../assets/1.png) 100% 10% / cover  !important;
+}
+.third-carousel-item {
+  height: 100%;
+  background: linear-gradient(to left, var(--primary),var(--secondary)),
+                              url(../assets/2.jpg) 100% 30% / cover  !important;
+}
+.fourth-carousel-item {
+  height: 100%;
+  background: linear-gradient(to left, var(--primary),var(--secondary)),
+                              url(../assets/4.jpg) 100% 70% / cover  !important;
+}
+.carousel-text-block {
+  backdrop-filter: blur(5px);
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.carousel-header {
+  font-size: 48px !important;
+  margin: 0 !important;
+}
+.scopes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.scope-1 {
+  margin-right: 10%;
+}
+.scope-1:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.scope-2 {
+  margin-left: 10%;
+}
+.scope-2:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.contacts:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}

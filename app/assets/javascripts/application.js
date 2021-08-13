@@ -11,5 +11,27 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require materialize 
 //= require turbolinks
 //= require_tree .
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.carousel');
+  var instance = M.Carousel.init(elems, {fullWidth: true});
+  for (var i = 0; i < elems.length; i++) {
+    var elem = elems[i]
+    var inst =  M.Carousel.getInstance(elem);
+    var nextbtn = document.querySelector('.next-btn');
+    var prevbtn = document.querySelector('.prev-btn');
+    nextbtn.addEventListener('click', function() {
+      inst.next()
+    })
+    prevbtn.addEventListener('click', function() {
+      inst.prev()
+    })
+  }
+});
+
+
+
+
