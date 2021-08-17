@@ -11,11 +11,15 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
 //= require materialize 
 //= require turbolinks
 //= require_tree .
 
 document.addEventListener('DOMContentLoaded', function() {
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
   var elems = document.querySelectorAll('.carousel');
   var instance = M.Carousel.init(elems, {fullWidth: true});
   for (var i = 0; i < elems.length; i++) {
@@ -30,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
       inst.prev()
     })
   }
+  $('#fade-out-target').fadeOut(2000)
 });
 
 

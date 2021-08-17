@@ -1,0 +1,32 @@
+<nav class="nav-block">
+  <div class="nav-wrapper grey darken-3">
+    <a href="#" class="brand-logo">
+      <%= image_tag("icon-wide.png", alt: "image", size: '80x50', class:"icon" ) %>
+    </a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="nav-li"><a href="#" class="nav-link">Courses</a></li>
+        <li class="nav-li"><a href="#" class="nav-link">Enrollments</a></li>
+        <li class="nav-li"><%= session_link %></li>
+      </ul>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Enrollments</a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+  </div>
+</nav>
+
+<% flash.each do  |key,message| %>
+  <div class="container">
+    <div class="row sign-up-form">
+        <div class="col s12 m12 l12"> 
+          <div class="card-panel red lighten-1" id="fade-out-target">
+            <span class="white-text">
+              <%= message %>
+            </span>
+          </div>
+        </div>
+    </div>
+  </div>
+<% end %>

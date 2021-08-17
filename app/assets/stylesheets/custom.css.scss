@@ -3,16 +3,24 @@
   --primary: #4846b65b;
   --secondary: #49c6f81f;
 }
-.full-height {
-  height: 100vh;
+body {
+  display: flex !important;
+  min-height: 100vh !important;
+  flex-direction: column !important;
 }
-.nav-block {
+main {
+  flex: 1 0 auto !important;
+}
+.full-height {
+  height: 91vh;
+}
+header {
   height: 10%;
 }
 #nav-mobile {
   height: 100%;
 }
-#nav-mobile li {
+.nav-li {
   height: 100%;
 }
 .nav-link {
@@ -21,7 +29,7 @@
  align-items: center;
 }
 .carousel {
-  height: 90%;
+  height: 100% !important;
 }
 .home {
   margin-top: 3%;
@@ -110,4 +118,16 @@
   transform: scale(1.2);
   cursor: pointer;
   transition-duration: 0.3s;
+}
+.text-center {
+  text-align: center;
+}
+.sign-up-form {
+  padding-top: 10%;
+}
+.padding-bottom {
+  padding-bottom: 5%;
+}
+.padding-top {
+  padding-top: 30px;
 }
